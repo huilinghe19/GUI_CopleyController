@@ -8,7 +8,7 @@ Steps:
 
 2. Use git clone to download all the content here to a folder such as "/work", 
 
-3. Open the GUI using "taurusgui work/GUI_CopleyController". Then CopleyController is opened. The structure is shown in "/images". It works well with the motors.
+3. Open the GUI using "taurusgui work/GUI_CopleyController". Then CopleyController is opened. The structure is shown in "/images". It works well with the motors. The functions of each module such as experiment config, macros and sequencer, taurustrend, are described in the sardana training. As soon as 
 
 Because pip is not installed in my computer, so I can not use pip to create GUI directly. If you have pip, you can use "pip install work/GUI_CopleyController" to install GUI and then you can run GUI USING "CopleyController".
 
