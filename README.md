@@ -4,7 +4,7 @@ Steps:
 
 1. Precondition: 
 
- Open Sardana, put the file "copleyController.py" in "/controllers", set it as controller path in spock. 
+ Open Sardana, put the file "copleyController.py" in "/controllers", set it as controller path in spock. Set motors "stepnet01", "stepnet02" in spock.
  
  "copleyController.py" is here:
 https://github.com/huilinghe19/sardana_practise/blob/master/copley_controllers/copleyController.py
