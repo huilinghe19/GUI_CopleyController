@@ -1,0 +1,336 @@
+
+                           Release Notes for 
+                            CME 2 Software
+                             Version 7.0
+
+
+================================================================================
+  Features Added Since V6.1
+================================================================================
+1) Added support for
+       XE2, XE2-R
+       XP2, XP2-R
+       BE2, BP2
+       TE2, TP2
+       BEL
+       BE2-R
+       SP4
+
+2) Added support for EnDat Linear encoders.
+
+3) Changed Auto Phase, Phase Count test to allow partial rotation for rotary motors.
+
+4) On multi-axis drives: one axis can be copied to one or more axes. This feature
+   is accessed using the Copy Axis menu item in the File menu.
+
+5) On multi-axis drives, the save and restore can now be done with a single axis.
+   This feature can be accessed from the File->Save As->Single Axis, and 
+   File->Restore->Single Axis menu items
+
+6) Added PID parameters to Position Loop screen.
+
+7) Added functionality to save the Drive Configuration, which is all of the drive's
+   Parameters and CVM file system into one XML: formatted file (.ccd).  This feature
+   is only supported on Plus products with a firmware version of at least 1.60.
+
+8) Changed the order of firmware/FPGA download, so that FPGA is loaded first.
+
+9) Added functionality for motor wiring check and fault.
+
+10) Added ability to set the abort jerk parameter (0x195).
+
+11) Added support for absolute encoder calibration.
+
+12) Added Raw Encoder Signals trace variable. This allows the A, B, X, and S lines
+    of the primary and secondary encoders to be traced.  This feature requires a
+    minimum firmware version of 2.10 and is only available on the Plus family of
+    products (Feature Set E)
+
+
+================================================================================
+  Features Added Since V6.0
+================================================================================
+1) Added support for the XPL and APM.
+
+2) Added trace variables that measure Actual Current U and V.
+
+3) Added support for AE2 hardware.
+
+4) BiSS C encoders can now be chosen for the load encoder.
+
+5) Added support for the SEM hardware.
+
+6) Added homing support for Absolute encoders.
+
+7) Added Filter Configuration screen for Plus amps.
+
+8) Added input shaping to filter configuration screen.  This feature is only 
+   available on the Plus products and requires a minimum firmware version of 1.34.
+
+9) Added Gain Scheduling to Plus products. This feature requires a minimum firmware version of 1.36.
+
+10) Added support for SEM and SPM
+
+11) Added support for SE2 and SP2
+
+12) For plus products, enable input now designated as programmable GP input
+
+13) Added option to Ignore 'Battery Loss’ error for: Absolute A, Tamagawa Absolute A,
+    Panasonic Absolute A, Panasonic Incremental A, and Sanyo Denki Absolute A encoders.
+
+
+
+================================================================================
+  Features Added Since V5.3
+================================================================================
+1) Added indexer support for the CAN IO Module (CAN-IPM-01).
+
+2) Added support for the ADP-R and R20-R drives.
+
+3) Added support for the Xenus Plus drives (XEL, XML, and -R versions).
+
+4) Added support for the Accelnet Plus Module (AEM).
+
+4) Added support for the ACJ-R, ACM-R, ADP-R.
+
+5) Added primary incremental to encoder list for XTL-S and ADP-S.
+
+6) CME 2 is now able to communicate via EtherCAT (currently the only drives that
+   support this are the AEP and XEL). WinPcap, a third-party driver, is required
+   for EtherCAT communications.  The driver can be downloaded from Copley's web
+   site:
+       http://www.copleycontrols.com/motion/zip/WinPcap.zip
+
+7) Added functionality in the PWM Config screen to set PWM deadband in velocity
+   mode. This feature is available on the 807 processor family of drives (ACP, 
+   ACJ, etc.) starting with firmware version 5.58.
+
+8) Added support for IXXAT V3 drivers.
+
+9) Added the Save Restore Register bean to Indexer 2, which will save a one or
+   all 32 registers to flash.
+
+10) Detailed encoder error information can now be read in the Error Log screen
+    when there is a feedback error.  This only applies to the serial encoders
+    that report the detailed information.
+
+11) PWM Position is now available on the 8367 processor family.  This can be set 
+    up in the Digital Position Screen.
+
+================================================================================
+  Features Added Since V5.1
+================================================================================
+1) Support for the new 800-1615 amplifier has been added.
+
+2) The Wait For Input bean can now be configured to jump to a specific step of
+   a sequence.
+
+3) The Wait For Parameter bean can now be configured to wait for a register.
+
+4) Added support for the HD Absolute A Encoder.
+
+5) Support for the 800-1653 amplifier has been added.
+
+6) CME 2 can now save ccx files as the V4.1 format.
+
+7) Halls can now be used on high speed inputs for resolver capable amplifiers.
+
+8) Added support for the Tamagawa Absolute encoder.
+
+9) Added support for the BiSS encoder.
+
+10) Added support for the Panasonic Absolute A encoder.
+
+11) Added support for the Panasonic Incremental A encoder.
+
+12) Support for the 800-1663 amplifier has been added.
+
+13) Added two new variables to trace on the Scope (I2T Amplifier Accumulator
+    and I2T Motor Accumulator). This feature requires a minimum firmware
+    version of 1.58.
+
+14) Added support for the new ACK-R/R23-R amplifiers.
+
+15) The Error Log and Control Panel screens now display the MACRO network
+    status.
+
+16) When connected to an EtherCAT amplifier, the Network Configuration screen
+    will now display the values of the address switches (S1 and S2).
+
+17) Added support for the HD Absolute S encoder.
+
+
+================================================================================
+  Features Added Since V5.0
+================================================================================
+1) Support for the new ADP amplifier has been added.
+
+2) The Oscilloscope now has cursors to measure and analyze the waveforms
+   displayed. The cursors can be found on the measurement tab on the Oscilloscope.
+
+3) A high speed digital input can now be configured with the high speed position 
+   capture function.  This feature requires a firmware version of at least 5.12
+   (0.40 for XSJ and XTL).
+
+4) Adjustable position wrap has been added for the XSJ and XTL products.  This
+   feature needs a firmware version of at least 0.42.
+
+5) Estimated sinusoidal commutation can now be chosen in the Basic Setup screen.
+   This feature requires a firmware version of at least 4.70 (0.58 for XSJ and 
+   XTL).
+
+6) Functionality was added for MACRO amplifiers only, to save the tuning and
+   setup parameters in a format that can be read by a Delta Tau controller. A
+   firmware version of at least 1.02 is required for this feature.
+
+7) Support for the new XSJ-R amplifier has been added.
+
+8) When exiting the Network Configuration screen, you now have the option of
+   resetting the amplifier, so that the amplifier can recognize the new settings.
+
+9) A new screen has been added to configure Gain Scheduling.  This feature is
+   only available on the XTL, XSJ, ADP, AMP, and AEP amplifiers and requires a
+   firmware version of at least 1.10.
+
+10) An Indexer program can now be configured to run on startup without the need
+    for a go command.
+
+11) Support has been added for the STX amplifier.
+
+12) Home to hard stop can now be chosen as a homing method for a Stepnet amplifier.
+
+13) Added support for the new ACM amplifier with analog command capability.
+
+
+
+
+================================================================================
+    ccx (File Revision Matrix
+================================================================================
+
+ccx File Version               Written By CME 2 Version
+-------------------------------------------------------
+
+     14                          7.0, 6.1.3, 6.0, 5.3, 5.2 5.1
+
+     13                          5.0, 4.2
+
+     11                          4.1, 4.0
+
+
+
+
+================================================================================
+    ccm (Motor) File Revision Matrix
+================================================================================
+
+ccm File Version               Written By CME 2 Version
+-------------------------------------------------------
+
+     8                           6.0, 5.3, 5.2, 5.1, 4.2
+
+     7                           4.1, 4.0
+
+
+
+
+
+================================================================================
+    ccp (CVM Program) File Revision Matrix
+================================================================================
+
+ccp File Version               Written By CME 2 Version
+-------------------------------------------------------
+
+      3                          6.0, 5.3, 5.2
+
+      2                          5.1, 5.0
+
+      1                          4.2 and older
+
+
+
+
+================================================================================
+    cct (Cam Table) File Revision Matrix
+================================================================================
+
+cct File Version               Written By CME 2 Version
+-------------------------------------------------------
+
+     1                           6.0 or older
+
+
+
+
+================================================================================
+    ccg (Gain Scheduling) File Revision Matrix
+================================================================================
+
+ccg File Version               Written By CME 2 Version
+-------------------------------------------------------
+
+     1                           6.0 or older
+
+
+
+
+================================================================================
+    System Requirements
+================================================================================
+
+Hardware:
+    Minimum:  1GHz with 512MB RAM
+
+Communications:
+  - Standard RS-232 serial port 
+  - RS-232 to USB adapter
+  - CAN card
+
+Operating Systems Supported: XP, Vista, and Windows 7.
+
+Special Notes for Windows 8, 7, and Vista:
+
+1) When the installer starts, a message will be displayed stating that an 
+   unidentified program is trying to access the computer.  Click the button to
+   allow the installer to continue, and CME 2 will be installed properly.
+
+2) Default File Locations   
+   The default file location for CME's data files (ccx, ccm, etc.) is operating
+   system dependent. 
+
+   For Windows 2000 and XP:
+       C:\Program Files\Copley Motion\CME 2
+ 
+   For Windows Vista and 7
+       C:\Users\Public\Documents\Copley Motion\CME 2
+
+
+
+================================================================================
+    Installation procedures
+================================================================================
+
+The CD-ROM containing the software should automatically start the 
+installation wizard when the disk is inserted into your CD-ROM drive.  If 
+this does not happen automatically, run the program "setup.exe" from the 
+CD-ROM.
+
+We recommend running version 5.22 or later of the Xenus/Accelnet/Stepnet
+firmware, and version 3.50 or later of the Accelus/Junus firmware.  The 
+firmware can be obtained from our website: www.copleycontrols.com.  Use the
+Download Firmware command on the Tools menu of CME 2 to update the firmware.
+
+
+
+================================================================================
+    User documentation
+================================================================================
+
+Using CME 2 guides are available in .pdf format on the CD-ROM and will be 
+automatically placed in the  "Program Files\Copley Motion\CME 2\Doc" folder 
+during the installation.  A shortcut to this folder will be placed on your 
+desktop during the installation.  The documents are also available on our 
+website:
+
+www.copleycontrols.com.

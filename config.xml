@@ -1,0 +1,21 @@
+<taurusgui_config>
+  <GUI_NAME>CopleyController</GUI_NAME>
+  <ORGANIZATION>TAURUS</ORGANIZATION>
+  <CUSTOM_LOGO/>
+  <MACROSERVER_NAME>MacroServer/demo1/1</MACROSERVER_NAME>
+  <DOOR_NAME>Door/demo1/1</DOOR_NAME>
+  <INSTRUMENTS_FROM_POOL>True</INSTRUMENTS_FROM_POOL>
+  <PanelDescriptions>
+    <PanelDescription>
+  <name>copleycontroller</name>
+  <classname>TaurusForm</classname>
+  <modulename/>
+  <widgetname/>
+  <floating>True</floating>
+  <sharedDataWrite/>
+  <sharedDataRead/>
+  <model/>
+</PanelDescription>
+  </PanelDescriptions>
+  <MONITOR></MONITOR>
+</taurusgui_config>
