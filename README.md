@@ -6,7 +6,7 @@ Steps:
 
  Open Sardana, put the file "copleycontroller.py" in "/controllers", set it as controller path in spock. 
 
-2. Use git clone to download the content here to a folder such as "/work", 
+2. Use git clone to download all the content here to a folder such as "/work", 
 
 3. Open the GUI using "taurusgui work/GUI_CopleyController". Then CopleyController is opened. The structure is shown in "/images". It works well with the motors.
 
