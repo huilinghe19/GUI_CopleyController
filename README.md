@@ -8,7 +8,7 @@ Steps:
 
 2. Use git clone to download the content here to a folder such as "/work", 
 
-3. Open the GUI using "taurusgui work/GUI_CopleyController". 
+3. Open the GUI using "taurusgui work/GUI_CopleyController". Then CopleyController is opened. The structure is shown in "/images". It works well with the motors.
 
 Because pip is not installed in my computer, so I can not use pip to create GUI directly. If you have pip, you can use "pip install work/GUI_CopleyController" to install GUI and then you can run GUI USING "CopleyController".
 
