@@ -12,6 +12,7 @@ Steps:
 
 Because pip is not installed in my computer, so I can not use pip to create GUI directly. If you have pip, you can use "pip install work/GUI_CopleyController" to install GUI and then you can run GUI USING "CopleyController".
 
+4. Here is the documentation for GUI.
 https://github.com/sardana-org/sardana-training/blob/master/users/taurusgui.ipynb
 
     """
